@@ -28,6 +28,16 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+        slt: spacebar_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_LAYER_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&mo>, <&kp>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -36,8 +46,8 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp F    &kp P      &kp B      &kp J    &kp L     &kp U      &kp Y    &kp SQT   &kp BSPC
 &kp LCTRL  &cmt LGUI A  &cmt LALT R  &cmt LCTRL S    &cmt LSHIFT T      &kp G      &kp M    &cmt LSHIFT N     &cmt LCTRL E      &cmt LALT I    &cmt LGUI O     &kp ENTER
-&kp LSHFT  &kp Z  &cmt RALT X  &kp C    &kp D      &kp V      &kp K    &kp H     &kp COMMA  &cmt RALT DOT  &kp FSLH  &lt BT RSHFT
-                         &lt BT TAB  &lt NAV SPACE  &lt RSYM ESC    &lt LSYM RET  &lt NUM BSPC  &lt MEDIA DEL
+&kp LSHFT  &kp Z  &cmt RALT X  &kp C    &kp D      &kp V      &kp K    &kp H     &kp COMMA  &cmt RALT DOT  &kp FSLH  &kp RSHFT
+                         &slt BT TAB  &slt NAV SPACE  &slt RSYM ESC    &slt LSYM RET  &slt NUM BSPC  &slt MEDIA DEL
             >;
         };
 
