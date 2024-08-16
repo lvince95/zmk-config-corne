@@ -21,16 +21,16 @@
             >;
         };
 
-        nav_layer {
+        navigation_layer {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans    &kp L     &kp U    &trans     &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
-&trans  &trans    &kp RALT  &trans     &trans     &trans    &kp H     &kp J     &kp K    &kp L      &trans  &trans
-                            &trans     &trans     &trans    &kp RET   &kp BSPC  &kp DEL
+&trans  &trans    &trans    &trans     &trans     &trans    &trans    &kp CARET  &kp DOLLAR  &trans     &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT  &trans  &trans
+&trans  &trans    &kp RALT  &trans     &trans     &trans    &kp H     &kp J      &kp K       &kp L      &trans  &trans
+                            &trans     &trans     &trans    &kp RET   &kp BSPC   &kp DEL
             >;
         };
 
-        num_layer {
+        number_layer {
             bindings = <
 &trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &trans  &trans     &trans     &trans    &trans    &trans
 &trans  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
@@ -39,7 +39,7 @@
             >;
         };
 
-        rsym_layer {
+        right_symbol_layer {
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans     &kp LS(AMPS)   &kp SEMI        &kp LBKT      &kp RBKT      &kp LS(PRCNT)  &trans
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans     &kp LS(PIPE)   &kp LS(COLON)   &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(QMARK)  &trans
@@ -48,7 +48,7 @@
             >;
         };
 
-        lsym_layer {
+        left_symbol_layer {
             bindings = <
 &trans  &kp GRAVE      &kp LS(LT)  &kp LS(GT)    &kp LS(DQT)    &kp DOT          &trans   &trans     &trans     &trans    &trans    &trans
 &trans  &kp LS(EXCL)   &kp MINUS   &kp LS(PLUS)  &kp EQUAL      &kp LS(POUND)    &trans   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
@@ -66,7 +66,7 @@
             >;
         };
 
-        bt_layer {
+        bluetooth_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_PRV    &bt BT_NXT      &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
