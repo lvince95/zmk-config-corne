@@ -37,7 +37,7 @@
 &kp TAB    &kp Q  &kp W  &kp F    &kp P      &kp B      &kp J    &kp L     &kp U      &kp Y    &kp SQT   &kp BSPC
 &kp LCTRL  &cmt LGUI A  &cmt LALT R  &cmt LCTRL S    &cmt LSHIFT T      &kp G      &kp M    &cmt LSHIFT N     &cmt LCTRL E      &cmt LALT I    &cmt LGUI O     &kp ENTER
 &kp LSHFT  &kp Z  &cmt RALT X  &kp C    &kp D      &kp V      &kp K    &kp H     &kp COMMA  &cmt RALT DOT  &kp FSLH  &lt BT RSHFT
-                         &kp TAB  &lt NAV SPACE  &lt RSYM ESC    &lt LSYM RET  &lt NUM BSPC  &lt MEDIA DEL
+                         &lt BT TAB  &lt NAV SPACE  &lt RSYM ESC    &lt LSYM RET  &lt NUM BSPC  &lt MEDIA DEL
             >;
         };
 
