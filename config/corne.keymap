@@ -24,7 +24,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <135>;
+            quick-tap-ms = <75>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -34,7 +34,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            quick-tap-ms = <75>;
             global-quick-tap;
             bindings = <&mo>, <&kp>;
         };
@@ -45,9 +45,9 @@
         default_layer {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp F    &kp P      &kp B      &kp J    &kp L     &kp U      &kp Y    &kp SQT   &kp BSPC
-&kp LCTRL  &mt LGUI A  &mt LALT R  &mt LCTRL S    &mt LSHIFT T      &kp G      &kp M    &mt LSHIFT N     &mt LCTRL E      &mt LALT I    &mt LGUI O     &kp ENTER
-&kp LSHFT  &kp Z  &mt RALT X  &kp C    &kp D      &kp V      &kp K    &kp H     &kp COMMA  &mt RALT DOT  &kp FSLH  &kp RSHFT
-                         &lt BT TAB  &lt NAV SPACE  &lt RSYM ESC    &lt LSYM RET  &lt NUM BSPC  &lt MEDIA DEL
+&kp LCTRL  &cmt LGUI A  &cmt LALT R  &cmt LCTRL S    &cmt LSHIFT T      &kp G      &kp M    &cmt LSHIFT N     &cmt LCTRL E      &cmt LALT I    &cmt LGUI O     &kp ENTER
+&kp LSHFT  &kp Z  &cmt RALT X  &kp C    &kp D      &kp V      &kp K    &kp H     &kp COMMA  &cmt RALT DOT  &kp FSLH  &kp RSHFT
+                         &slt BT TAB  &slt NAV SPACE  &slt RSYM ESC    &slt LSYM RET  &slt NUM BSPC  &slt MEDIA DEL
             >;
         };
 
