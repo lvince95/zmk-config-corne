@@ -17,7 +17,8 @@
 
 #include "includes/settings.dtsi"
 #include "includes/combos.dtsi"
-#include "includes/behaviors.dtsi"
+#include "includes/behaviors_hold_tap.dtsi"
+#include "includes/behaviors_mod_morph.dtsi"
 
 / {
     keymap {
