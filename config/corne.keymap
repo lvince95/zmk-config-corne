@@ -16,8 +16,17 @@
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
 
 #define HM_TAPPING_TERM 280
-#define HM_TAPPING_TERM_FAST 100
+#define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 150
+
+&sk {  // sticky-key config
+    release-after-ms = <900>;  // release after 0.6s
+    quick-release;             // no double capitalization when rolling keys
+};
+
+&sl {  // sticky-layer config
+    ignore-modifiers;          // allow chording sticky mods & layers
+};
 
 &lt {
     // Increase layer tap time
@@ -30,6 +39,19 @@
      quick-tap-ms = <200>;
 
      flavor = "balanced";
+};
+
+&caps_word { 
+    // Allow caps word to continue even when minus or underscore
+    // are pressed.
+    // Also prevent mod presses from cancelling caps word.
+    continue-list = <
+      UNDERSCORE MINUS
+      LCTRL LALT LGUI LSHFT
+      RCTRL RALT RGUI RSHFT
+      BACKSPACE
+    >;
+    /delete-property/ ignore-modifiers;
 };
 
 / {
@@ -92,6 +114,14 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             // hold-trigger-on-release;
         }; 
+        ss: smart_shift {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+
+            bindings = <&sk LSHFT>, <&caps_word>;
+
+            mods = <(MOD_LSFT)>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -99,9 +129,9 @@
         default_layer {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp F    &kp P      &kp B      &kp J    &kp L     &kp U      &kp Y    &kp SQT   &kp BSPC
-&kp LCTRL  &hml LGUI A  &hml LALT R  &hml LCTRL S    &hmsl LSHIFT T      &kp G      &kp M    &hmsr LSHIFT N     &hmr LCTRL E      &hmr LALT I    &hmr LGUI O     &kp ENTER
+&kp LCTRL  &hml LGUI A  &hml LALT R  &hml LCTRL S    &hml LSHIFT T      &kp G      &kp M    &hmr LSHIFT N     &hmr LCTRL E      &hmr LALT I    &hmr LGUI O     &kp ENTER
 &kp LSHFT  &kp Z  &kp X  &kp C    &kp D      &kp V      &kp K    &kp H     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &lt BT TAB  &lt NAV SPACE  &lt RSYM ESC    &lt LSYM RET  &lt NUM BSPC  &lt MEDIA DEL
+                         &lt BT TAB  &lt NAV SPACE  &lt RSYM ESC    &lt LSYM RET  &lt NUM BSPC  &ss
             >;
         };
 
