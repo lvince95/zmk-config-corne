@@ -161,7 +161,7 @@
 &kp TAB    &kp Q  &kp W  &kp F    &kp P      &kp B      &kp J    &kp L     &kp U      &kp Y    &kp SQT   &kp BSPC
 &ss  &hml LGUI A  &hml LALT R  &hml LCTRL S    &hmsl LSHIFT T      &kp G      &kp M    &hmsr LSHIFT N     &hmr LCTRL E      &hmr LALT I    &hmr LGUI O     &ss
 &ss  &kp Z  &kp X  &kp C    &kp D      &kp V      &kp K    &kp H     &kp COMMA  &kp DOT  &kp FSLH  &ss
-                         &lt BT TAB  &lt NAV SPACE  &lt RSYM ESC    &lt LSYM RET  &lt NUM BSPC  &lt MEDIA DEL
+                         &lt BT TAB  &ltl NAV SPACE  &ltl RSYM ESC    &ltr LSYM RET  &ltr NUM BSPC  &lt MEDIA DEL
             >;
         };
 
